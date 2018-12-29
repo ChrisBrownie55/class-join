@@ -25,9 +25,9 @@ import classJoin from 'class-join';
 classJoin('loading-indicator', 'red-bg');
 // => 'loading-indicator red-bg'
 
-/* OBJECTS */
+/* OBJECTS, falsey values cause extra spaces */
 classJoin({ animated: 'truthy value', 'inactive-bg': false });
-// => 'animated'
+// => 'animated '
 
 /* OBJECTS & STRINGS */
 classJoin('loading-indicator', { animated: true });
@@ -37,16 +37,27 @@ classJoin('loading-indicator', { animated: true });
 classJoin(['activated', { nested: true }]);
 // => 'activated nested'
 
-/* All other types will be ignored */
+/*
+  All other types will be ignored but will cause extra spaces
+  if they are either, falsey object (null) or not an object/string/array
+*/
 classJoin('test', undefined);
-// => 'test'
+// => 'test '
 
-/* Multiple of same value */
+classJoin(null, 'test');
+// => ' test'
+
+/* Multiple of same value will not be removed as there is no need */
 classJoin('test', 'test', 'test');
 // => 'test test test'
 ```
 
-## What about React.js
+### NOTE: extra spaces will not affect use with DOM elements (includes framework elements like React)
+
+## What about using it in React.js?
+
+TLDR: just pass it to `className`
+
 ```jsx
 /* REACT CLASS COMPONENT */
 class MyComponent extends React.Component {

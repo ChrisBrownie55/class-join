@@ -20,6 +20,11 @@ describe('classJoin', () => {
     expect(classJoin({ test2: '' })).toBe('');
   });
 
+  test('should have trailing/preceding space when a there is both truthy and falsey values in an object', () => {
+    expect(classJoin({ test1: true, test2: false })).toBe('test1 ');
+    expect(classJoin({ test1: false, test2: true })).toBe(' test2');
+  })
+
   test('should return combined string when multiple objects are passed', () => {
     expect(classJoin({ test1: true }, { test2: true })).toBe('test1 test2');
   });
@@ -40,6 +45,5 @@ describe('classJoin', () => {
   test('should remove all other types from the output causing extra spaces', () => {
     expect(classJoin('test', undefined)).toBe('test ');
     expect(classJoin(null, 'test')).toBe(' test');
-
   });
 });
