@@ -65,4 +65,4 @@ function MyComponent({ className }) {
 # License
 [MIT](https://github.com/ChrisBrownie55/class-names/blob/master/LICENSE) Copyright © 2018 Christopher Brown
 
-Influenced by Jed Watson's [class-names](https://github.com/JedWatson/classnames)
+Influenced by Jed Watson's [classnames](https://github.com/JedWatson/classnames)
