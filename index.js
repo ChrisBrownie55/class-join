@@ -1,5 +1,5 @@
-module.exports = classNames = (...classes) => {
-  return classes.reduce((className, current) => {
+module.exports = classNames = (...classes) =>
+  classes.reduce((className, current) => {
     return typeof current == 'string'
       ? className + current
       : Array.isArray(current)
@@ -8,4 +8,3 @@ module.exports = classNames = (...classes) => {
           ? className + Object.keys(current).map(key => current[key] ? key : '').join(' ')
           : className;
   }, '');
-};
