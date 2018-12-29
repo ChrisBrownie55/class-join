@@ -2,16 +2,18 @@
   "name": "class-names",
   "version": "1.0.0",
   "description": "A simple and small JavaScript utility for joining class names together",
-  "main": "index.js",
+  "main": "class-join.min.js",
   "repository": "git@github.com:ChrisBrownie55/class-join.git",
   "author": "Christopher Brown <chbphone55@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "terser ./index.js -c -m -o ./class-join.min.js; regex-replace 'classJoin' 'q' './class-join.min.js' --filecontents"
   },
   "devDependencies": {
     "jest": "^23.6.0",
+    "regex-replace": "^2.3.0",
     "terser": "^3.14.0-beta"
   },
   "dependencies": {}
