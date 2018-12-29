@@ -1,11 +1,11 @@
 # class-names
-A simple and small JavaScript utility for joining classNames together. Made for use with frameworks like React, but can be used how you see fit.
+A simple and small JavaScript utility for joining class-names together. Made for use with frameworks like React, but can be used how you see fit.
 
 ## **Installation:**
 ```bash
-npm i classNames
+npm i class-names
 # or
-yarn add classNames
+yarn add class-names
 ```
 
 ## **Usage:**
@@ -13,10 +13,10 @@ yarn add classNames
 ### First let's import it
 ```js
 // Node
-const classNames = require('classNames');
+const classNames = require('class-names');
 
 // ESM
-import classNames from 'classNames';
+import classNames from 'class-names';
 ```
 
 ### Now let's use it
@@ -63,6 +63,6 @@ function MyComponent({ className }) {
 ```
 
 # License
-[MIT](https://github.com/ChrisBrownie55/classNames/blob/master/LICENSE) Copyright © 2018 Christopher Brown
+[MIT](https://github.com/ChrisBrownie55/class-names/blob/master/LICENSE) Copyright © 2018 Christopher Brown
 
-Influenced by Jed Watson's [classnames](https://github.com/JedWatson/classnames)
+Influenced by Jed Watson's [class-names](https://github.com/JedWatson/classnames)
