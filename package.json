@@ -1,0 +1,13 @@
+{
+  "name": "class-names",
+  "version": "1.0.0",
+  "description": "A simple and small JavaScript utility for joining classNames together",
+  "main": "index.js",
+  "repository": "git@github.com:ChrisBrownie55/classNames.git",
+  "author": "Christopher Brown <chbphone55@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  }
+}
