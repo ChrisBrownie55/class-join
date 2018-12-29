@@ -1,11 +1,11 @@
-# class-names
-A simple and small JavaScript utility for joining class-names together. Made for use with frameworks like React, but can be used how you see fit.
+# class-join
+A simple and small JavaScript utility for joining class names together. Made for use with frameworks like React, but can be used how you see fit.
 
 ## **Installation:**
 ```bash
-npm i class-names
+npm i class-join
 # or
-yarn add class-names
+yarn add class-join
 ```
 
 ## **Usage:**
@@ -13,36 +13,36 @@ yarn add class-names
 ### First let's import it
 ```js
 // Node
-const classNames = require('class-names');
+const classJoin = require('class-join');
 
 // ESM
-import classNames from 'class-names';
+import classJoin from 'class-join';
 ```
 
 ### Now let's use it
 ```js
 /* STRINGS */
-classNames('loading-indicator', 'red-bg');
+classJoin('loading-indicator', 'red-bg');
 // => 'loading-indicator red-bg'
 
 /* OBJECTS */
-classNames({ animated: 'truthy value', 'inactive-bg': false });
+classJoin({ animated: 'truthy value', 'inactive-bg': false });
 // => 'animated'
 
 /* OBJECTS & STRINGS */
-classNames('loading-indicator', { animated: true });
+classJoin('loading-indicator', { animated: true });
 // => 'loading-indicator animated'
 
 /* ARRAYS (recursively flattened) */
-classNames(['activated', { nested: true }]);
+classJoin(['activated', { nested: true }]);
 // => 'activated nested'
 
 /* All other types will be ignored */
-classNames('test', undefined);
+classJoin('test', undefined);
 // => 'test'
 
 /* Multiple of same value */
-classNames('test', 'test', 'test');
+classJoin('test', 'test', 'test');
 // => 'test test test'
 ```
 
@@ -52,17 +52,17 @@ classNames('test', 'test', 'test');
 class MyComponent extends React.Component {
   render() {
     const { className } = this.props;
-    return <div className={classNames('test', className)}></div>;
+    return <div className={classJoin('test', className)}></div>;
   }
 }
 
 /* REACT FUNCTION COMPONENT */
 function MyComponent({ className }) {
-  return <div className={classNames('test', className)}></div>;
+  return <div className={classJoin('test', className)}></div>;
 }
 ```
 
 # License
-[MIT](https://github.com/ChrisBrownie55/class-names/blob/master/LICENSE) Copyright © 2018 Christopher Brown
+[MIT](https://github.com/ChrisBrownie55/class-join/blob/master/LICENSE) Copyright © 2018 Christopher Brown
 
 Influenced by Jed Watson's [classnames](https://github.com/JedWatson/classnames)
