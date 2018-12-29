@@ -5,7 +5,7 @@ module.exports = classNames = (...classes) =>
         ? current
         : Array.isArray(current)
           ? classNames(...current)
-          : typeof current == 'object'
+          : typeof current == 'object' && current
             ? Object.keys(current).map(key => current[key] ? key : '')
             : ''
     ), []).join(' ');
