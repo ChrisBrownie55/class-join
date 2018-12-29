@@ -21,7 +21,7 @@ describe('classNames', () => {
   });
 
   test('should return combined string when multiple objects are passed', () => {
-    expect(classnames({ test1: true }, { test2: true })).toBe('test1 test2');
+    expect(classNames({ test1: true }, { test2: true })).toBe('test1 test2');
   });
 
   test('should return combined string when strings and objects are passed', () => {
