@@ -1,4 +1,17 @@
 # class-join
+
+<img alt="Dependency Status" src="https://david-dm.org/ChrisBrownie55/class-join.svg" />
+<a href="https://codeclimate.com/github/ChrisBrownie55/class-join/maintainability">
+  <img src="https://api.codeclimate.com/v1/badges/8879bdee9b5f03fe7119/maintainability" />
+</a>
+<a href="https://snyk.io/test/github/ChrisBrownie55/class-join?targetFile=package.json">
+  <img src="https://snyk.io/test/github/ChrisBrownie55/class-join/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/ChrisBrownie55/class-join?targetFile=package.json" />
+</a>
+<a href="https://badge.fury.io/js/class-join">
+  <img src="https://badge.fury.io/js/class-join.svg" alt="npm version" />
+</a>
+<img src="https://img.shields.io/npm/class-join/localeval.svg" />
+
 A simple and small JavaScript utility for joining class names together. Made for use with frameworks like React, but can be used how you see fit.
 
 ## **Installation:**
