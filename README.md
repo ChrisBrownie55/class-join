@@ -1,19 +1,10 @@
 # classnames
 
 <img alt="Dependency Status" src="https://david-dm.org/ChrisBrownie55/classnames.svg" />
-<a href="https://codeclimate.com/github/ChrisBrownie55/classnames/maintainability">
-  <img src="https://api.codeclimate.com/v1/badges/8879bdee9b5f03fe7119/maintainability" />
-</a>
-<a href="https://snyk.io/test/github/ChrisBrownie55/classnames?targetFile=package.json">
-  <img src="https://snyk.io/test/github/ChrisBrownie55/classnames/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/ChrisBrownie55/classnames?targetFile=package.json" />
-</a>
-<a href="https://badge.fury.io/js/classnames">
-  <img src="https://badge.fury.io/js/classnames.svg" alt="npm version" />
-</a>
-<img src="https://img.shields.io/npm/dw/@chbphone55/classnames.svg" />
-<a href="http://hits.dwyl.io/ChrisBrownie55/classnames">
-  <img alt="Hit Coun" src="http://hits.dwyl.io/ChrisBrownie55/classnames.svg" style="border-radius: 2px;" />
-</a>
+<img src="https://api.codeclimate.com/v1/badges/8879bdee9b5f03fe7119/maintainability" alt="Maintainability Rating" />
+<img src="https://snyk.io/test/github/ChrisBrownie55/classnames/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" />
+<img src="https://badge.fury.io/js/classnames.svg" alt="npm version" />
+<img src="https://img.shields.io/npm/dw/@chbphone55/classnames.svg" alt="downloads" />
 
 A simple and small JavaScript utility for joining class names together. Made for use with frameworks like React, but can be used how you see fit.
 
