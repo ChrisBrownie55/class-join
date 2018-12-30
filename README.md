@@ -10,9 +10,9 @@
 <a href="https://badge.fury.io/js/classnames">
   <img src="https://badge.fury.io/js/classnames.svg" alt="npm version" />
 </a>
-<img src="https://img.shields.io/npm/classnames/localeval.svg" />
+<img src="https://img.shields.io/npm/dw/@chbphone55/classnames.svg" />
 <a href="http://hits.dwyl.io/ChrisBrownie55/classnames">
-  <img alt="Hit Count" src="http://hits.dwyl.io/ChrisBrownie55/classnames.svg" />
+  <img alt="Hit Coun" src="http://hits.dwyl.io/ChrisBrownie55/classnames.svg" style="border-radius: 2px;" />
 </a>
 
 A simple and small JavaScript utility for joining class names together. Made for use with frameworks like React, but can be used how you see fit.
