@@ -1,5 +1,5 @@
 {
-  "name": "@chrisbrownie55/classnames",
+  "name": "@chbphone55/classnames",
   "version": "1.0.0",
   "description": "A simple and small JavaScript utility for joining class names together",
   "main": "dist/index.min.js",
