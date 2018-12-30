@@ -1,2 +1,2 @@
-declare function classJoin(...classes: any): string;
-export default classJoin;
+declare function classNames(...classes: any): string;
+export default classNames;
