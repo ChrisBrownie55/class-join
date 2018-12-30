@@ -19,9 +19,9 @@ A simple and small JavaScript utility for joining class names together. Made for
 
 ## **Installation:**
 ```bash
-npm i @chrisbrownie55/classnames
+npm i @chbphone55/classnames
 # or
-yarn add @chrisbrownie55/classnames
+yarn add @chbphone55/classnames
 ```
 
 ## **Usage:**
@@ -29,10 +29,10 @@ yarn add @chrisbrownie55/classnames
 ### First let's import it
 ```js
 // Node
-const classNames = require('@chrisbrownie55/classnames');
+const classNames = require('@chbphone55/classnames');
 
 // ESM
-import classNames from '@chrisbrownie55/classnames';
+import classNames from '@chbphone55/classnames';
 ```
 
 ### Now let's use it
