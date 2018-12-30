@@ -87,6 +87,6 @@ function MyComponent({ className }) {
 ```
 
 # License
-[MIT](https://github.com/ChrisBrownie55/class-join/blob/master/LICENSE) Copyright © 2018 Christopher Brown
+[MIT](https://github.com/ChrisBrownie55/classnames/blob/master/LICENSE) Copyright © 2018 Christopher Brown
 
 Influenced by Jed Watson's [classnames](https://github.com/JedWatson/classnames)
