@@ -4,6 +4,9 @@
   "description": "A simple and small JavaScript utility for joining class names together",
   "main": "dist/index.min.js",
   "types": "index.d.ts",
+  "files": [
+    "dist/index.min.js"
+  ],
   "homepage": "https://github.com/ChrisBrownie55/classnames",
   "bugs": "https://github.com/ChrisBrownie55/classnames/issues",
   "repository": "git@github.com:ChrisBrownie55/classnames.git",
