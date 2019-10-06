@@ -15,9 +15,8 @@
     "build": "terser ./index.js -c -m -o ./dist/index.min.js; regex-replace classNames q ./dist/index.min.js --filecontents"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
+    "jest": "^24.9.0",
     "regex-replace": "^2.3.0",
-    "terser": "^3.14.0-beta"
-  },
-  "dependencies": {}
+    "terser": "^4.3.8"
+  }
 }
