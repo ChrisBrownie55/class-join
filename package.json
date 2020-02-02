@@ -2,24 +2,39 @@
   "name": "@chbphone55/classnames",
   "version": "1.0.4",
   "description": "A simple and small JavaScript utility for joining class names together",
-  "main": "dist/index.min.js",
-  "types": "index.d.ts",
+  "source": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "dist/index.min.js"
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/index.m.js",
+    "dist/index.umd.js"
   ],
   "homepage": "https://github.com/ChrisBrownie55/classnames",
   "bugs": "https://github.com/ChrisBrownie55/classnames/issues",
-  "repository": "git@github.com:ChrisBrownie55/classnames.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisBrownie55/classnames.git"
+  },
   "author": "Christopher Brown <chbphone55@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "test": "jest",
-    "build": "terser ./index.js -c -m -o ./dist/index.min.js; regex-replace classNames q ./dist/index.min.js --filecontents"
+    "build": "microbundle --raw --no-sourcemap",
+    "prepublish": "pnpm run build",
+    "test:publish": "e2e-verdaccio"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
-    "regex-replace": "^2.3.0",
-    "terser": "^4.3.8"
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
+    "e2e-verdaccio": "^1.0.0",
+    "jest": "^25.1.0",
+    "microbundle": "^0.11.0",
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
   }
 }

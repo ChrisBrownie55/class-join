@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2019",
+    "sourceMap": true,
+    "lib": ["es2015"],
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist",
+    "typeRoots": ["../node_modules/@types"]
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules"]
+}

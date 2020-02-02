@@ -20,10 +20,10 @@ yarn add @chbphone55/classnames
 ### First let's import it
 ```js
 // Node
-const classNames = require('@chbphone55/classnames');
+const { classNames } = require('@chbphone55/classnames');
 
 // ESM
-import classNames from '@chbphone55/classnames';
+import { classNames } from '@chbphone55/classnames';
 ```
 
 ### Now let's use it
@@ -65,7 +65,7 @@ classNames('test', 'test', 'test');
 
 You simply pass the call to `classNames()` as the value for the attribute `className={}`
 
-```jsx
+```jsx harmony
 /* REACT CLASS COMPONENT */
 class MyComponent extends React.Component {
   render() {

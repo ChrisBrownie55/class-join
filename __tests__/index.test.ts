@@ -1,4 +1,4 @@
-const classNames = require('./index.js');
+import { classNames } from "../index";
 
 describe('classNames', () => {
   test('should return the individual that was string passed in', () => {
@@ -23,7 +23,7 @@ describe('classNames', () => {
   test('should have trailing/preceding space when a there is both truthy and falsey values in an object', () => {
     expect(classNames({ test1: true, test2: false })).toBe('test1 ');
     expect(classNames({ test1: false, test2: true })).toBe(' test2');
-  })
+  });
 
   test('should return combined string when multiple objects are passed', () => {
     expect(classNames({ test1: true }, { test2: true })).toBe('test1 test2');
@@ -31,7 +31,7 @@ describe('classNames', () => {
 
   test('should return combined string when multiple keys are passed in an object', () => {
     expect(classNames({ test1: true, test2: true })).toBe('test1 test2');
-  })
+  });
 
   test('should return combined string when strings and objects are passed', () => {
     expect(classNames('test1', { test2: true })).toBe('test1 test2');

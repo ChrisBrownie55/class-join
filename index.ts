@@ -1,4 +1,4 @@
-module.exports = classNames = (...classes) =>
+export const classNames = (...classes: any[]): string =>
   classes.reduce((className, current) =>
     className.concat(
       typeof current == 'string'
