@@ -1,6 +1,6 @@
 {
   "name": "@chbphone55/classnames",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "A simple and small JavaScript utility for joining class names together",
   "source": "index.ts",
   "main": "dist/index.js",
